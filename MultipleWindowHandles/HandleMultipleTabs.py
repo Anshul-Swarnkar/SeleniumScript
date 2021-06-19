@@ -14,4 +14,5 @@ for tab in alltab:
     driver.switch_to.window(tab)
     if(driver.current_url=="https://www.facebook.com/OrangeHRM"):
         driver.find_element(By.XPATH,"//input[@type='submit']").click()
+        driver.quit()
 
